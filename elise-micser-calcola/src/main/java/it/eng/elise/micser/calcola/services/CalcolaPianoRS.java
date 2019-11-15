@@ -19,4 +19,9 @@ public class CalcolaPianoRS {
 		
 		return response;
 	}
+	@RequestMapping(method=RequestMethod.GET, value="/")
+	@ResponseBody
+	public String calcolaPiano() {	
+		return "ELISE - MICSER - calcola";
+	}
 }
